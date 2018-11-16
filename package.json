@@ -9,7 +9,8 @@
     "lint:md": "remark . .github -i ./.remarkignore",
     "lint:all": "npm run lint && npm run lint:md",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s -r 0",
-    "version": "npm run changelog && git add CHANGELOG.md"
+    "version": "npm run changelog && git add CHANGELOG.md",
+    "deploy": "gh-pages -d dist/"
   },
   "dependencies": {
     "sass-loader": "^7.1.0",
