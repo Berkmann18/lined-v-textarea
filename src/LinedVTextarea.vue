@@ -15,7 +15,7 @@
         ></p>
       </div>
     </div>
-    <textarea :disabled="disabled"
+    <v-textarea :disabled="disabled"
       :placeholder="placeholder"
       class="lined-textarea__content"
       :class="{ 'lined-textarea__content--disabled': disabled,
@@ -27,7 +27,7 @@
       v-on:mousedown="detectResize"
       :style="styles"
       ref="textarea"
-    ></textarea>
+    ></v-textarea>
     <div class="count-helper" ref="helper"></div>
   </div>
 </template>
